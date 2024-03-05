@@ -1,4 +1,4 @@
-import Portfolio from "./home/portfolio";
+import Portfolio from "./project/portfolio";
 
 const App = () => <portfolio />;
 
