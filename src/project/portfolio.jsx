@@ -9,15 +9,18 @@ export default function Portfolio() {
   const renderPage = () => {
     if (currentPage === "navbar") {
       return <NavBar />;
+    } else if (currentPage === "header") {
+      return <Header />;
+    } else if (currentPage === "footer") {
+      return <Footer />;
     }
   };
 
   return (
     <div>
-      <NavBar /> {}
-      {renderPage()}{" "}
-      {/* Calling the renderPage function to render the current page */}
-      <Footer /> {/* Rendering the Footer component */}
+      <NavBar />
+      {renderPage()}
+      <Footer />
     </div>
   );
 }
